@@ -1,0 +1,222 @@
+@import"./fonts.css";
+* {
+    margin: 0;
+    padding: 0;
+    font-family:  'Poppins', sans-serif;
+}
+/* mobile */
+@media (min-width: 320px) and (max-width: 768px){
+
+}
+/* tablet */
+@media (min-width: 768px) and (max-width: 1100px){
+
+}
+/* desktop */
+@media (min-width: 1100px){
+    /* navBar */
+    .boxSearchMenu {
+        width: 400px;
+    }
+    .mainHome {
+        margin-top: 80px;
+        width: 95%;
+    }
+    .iconBagNav {
+        font-size: 40px;
+        margin-left: 30px;
+        margin-right: 30px;
+        cursor: pointer;
+        color: rgb(255, 151, 48);
+    }
+    .iconBagNav:hover{
+        color: rgb(255, 128, 0);
+    }
+    /* cart */
+    .cart {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 400px;
+        min-height: 100%;
+        padding: 10px;
+        background-color: rgb(232, 232, 232);
+        box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+        transition: 0.3s;
+    }
+    .cantidad-carrito{
+        background-color: rgb(189, 126, 30);
+        color: white;
+        border-radius: 50%;
+        font-size: 14px;
+        width: 20px;
+        height: 20px;
+        top: 37px;
+        padding: 4px;
+        position: absolute;
+        display: none;
+    }
+    .cart.active {
+        right: 0;
+    }
+    .cart-box {
+        display: grid;
+        grid-template-columns: 40% 60% ;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        width: 100%;
+        padding: 5px;
+        border-top: 1px solid black;
+    }
+    .cart-imgg {
+        width: 90px;
+        height: 90px;
+        object-fit: contain;
+        align-items: center;
+    }
+    .detail-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .resta-suma-cartItem{
+        border: 0.5px solid #fff;
+        width: 4rem;
+    }
+    .sumaSpan{
+        cursor: pointer;
+        
+    }
+    .sumaSpan:hover{
+        color: rgb(41, 178, 0);
+    }
+    .restaSpan{
+        cursor: pointer;
+    }
+    .restaSpan:hover{
+        color: rgb(41, 178, 0);
+    }
+    .cart-producto-title {
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+    .cart-producto-price{
+        font-weight: 500;
+    }
+    .cart-total{
+        border-top: 1px solid rgb(161, 55, 55);
+        padding-top: 10px;
+    }
+    .btnDeleteItem {
+        font-size: 24px;
+    }
+    .btnDeleteItem:hover {
+        color: rgb(255, 0, 0);
+        cursor: pointer;
+    }
+    #closed-cart{
+        position: absolute;
+        top: 0.6rem;
+        right: 0.6rem;
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: rgb(255, 0, 0);
+    }
+    #closed-cart:hover {
+        color: rgb(0, 0, 0);
+    }
+    /* carousel */
+    .carousel-size {
+        width: 900px;
+    }
+    .img-carousel{
+        height: 600px;
+        object-fit: cover;
+        object-position: center;
+    }
+    /* products grid */
+    .productsBoxGrid {
+        width: 100%;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(275px, 0.3fr));
+        grid-auto-rows: 380px;
+        gap: 15px;
+        justify-content: center;
+    }
+    .divFilter{
+        height: 70px;
+    }
+    .productsTitle {
+        font-size: 45px;
+    }
+    .divTitle{
+        height: 80px;
+    }
+    .ticketBtn {
+        width: 70px;
+    }
+    .nameShoe {
+        font-size: 18px;
+    }
+    .imgCard {
+        width:90% ;
+        height: 70%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .cardItem {
+        padding-top: 5px;
+        height: 90%;
+        
+    }
+    .cardTitleProduct {
+        border-top: 0.5px solid rgb(183, 183, 183);
+    }
+    .nameProduct {
+        width:250px ;
+    }
+    .card{
+        height: 100%;
+    }
+    .add-to-cart{
+        font-size: 40px;
+        color:#fb9440;
+        cursor: pointer;
+    }
+    .add-to-cart:hover{
+        color: #ff7300;
+    }
+    .sizeOption {
+        font-size: 14px;
+        width: 80px;
+        }
+    .aside {
+        width: 25%;
+        height: min-content;
+        box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .shoppingCart {
+        background-color: rgb(225, 225, 225);;
+        border-radius: 5px;
+        width: 95%;
+        height: auto;
+    }
+    .asideAndCards{
+        width: 100%;
+    }
+    /* footer */
+    .footerBox {
+        background-image: url(../img/footerBack.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 300px;
+        width: 100%;
+        
+    }  
+}
